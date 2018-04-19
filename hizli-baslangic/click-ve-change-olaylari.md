@@ -78,7 +78,7 @@ class Toggle extends React.Component {
     this.state = {isToggleOn: true};
 
     // Click, change gibi olayların çalışabilmesi için aşağıdaki gibi bind etmek gerekir.
-    this.handleClick = this.handleClick.bind(this);
+    this.clickOlayi = this.clickOlayi.bind(this);
   }
 
   clickOlayi() {
@@ -89,7 +89,7 @@ class Toggle extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleClick}>
+      <button onClick={this.clickOlayi}>
         {this.state.isToggleOn ? 'Açık' : 'Kapalı'}
       </button>
     );
